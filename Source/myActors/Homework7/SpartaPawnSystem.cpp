@@ -35,7 +35,7 @@ ASpartaPawnSystem::ASpartaPawnSystem()
 	SkeletalMeshComp = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("SkeletalMeshComp"));
 	SkeletalMeshComp->SetupAttachment(CapsuleColliderComp);
 	SkeletalMeshComp->SetSimulatePhysics(false);
-	static ConstructorHelpers::FObjectFinder<USkeletalMesh> MeshAsset(TEXT("/Game/Resources/Characters/Meshes/SKM_Manny.SKM_Manny"));
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> MeshAsset(TEXT("/Game/Characters/Meshes/SKM_Manny.SKM_Manny"));
 
 	if (MeshAsset.Succeeded())
 	{
